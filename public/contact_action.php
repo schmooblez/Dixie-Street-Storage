@@ -4,17 +4,25 @@ if (empty($_POST)) {
     header('Location: /contact.php') ;
 }
 
-$fields = ['fname', 'lname', 'email', 'message'];
+$fields = ['name', 'phone', 'email', 'message'];
 
 foreach ($fields as $field) {
-    if (empty($_POST['field'])) {
-        header('Location: /contact.php');
+    if (empty($_POST[$field])) {
+        $errors[] = $field;
+        $messages[] = "The <strong>$field</strong> field cannot be empty";
+
     }
 }
 
+if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    $errors[] = 'email';
+    $messages[] = "The given <strong>email</strong> is formatted incorrectly.";
+}
 
-
-
+if (!empty($errors) || !empty($messages)) {
+    require "contact.php";
+    exit;
+}
 
 require "./../vendor/autoload.php";
 
@@ -24,9 +32,9 @@ $mg = new Mailgun($config['api_key']);
 
 $domain = $config['domain'];
 
-# Now, compose and send your message.
-$mg->sendMessage($domain, array('from'    => 'bob@example.com',
+$mg->sendMessage($domain, array('from'    => $_POST['email'],
                                 'to'      => $config['to'],
-                                'subject' => 'The PHP SDK is awesome!',
-                                'text'    => 'It is so simple to send a message.'));
+                                'subject' => "Contact Form from $config['domain']",
+                                'text'    => $_POST['message']));
 
+header('Location: /thanks.php');
