@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width">
     <meta charset="utf8">
 
-<!--     <link rel="stylesheet" type="text/css" href="/css/cssreset.css">
-    <link rel="stylesheet" type="text/css" href="/css/cssforall.css">
-   <link rel="stylesheet" type="text/css" href="/css/cssindexonly.css"> -->
+    <!--[if lt IE 9]>
+    <script src="dist/html5shiv.js"></script>
+    <![endif]-->
+
 </head>
 <body class="container">
