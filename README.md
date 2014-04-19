@@ -21,7 +21,8 @@ In your project directory you should see a ```env.php.dist``` clone that file as
 ~$ cp env.php.dist env.php
 ```
 
-```env.php```
+**env.php**
+
 ```php
 
 return [
