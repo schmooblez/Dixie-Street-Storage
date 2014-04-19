@@ -13,5 +13,20 @@ In order to get the Mailgun mailer to work correctly, you must install Mailgun w
 ~/path/to/project$ php composer.phar install
 ```
 
-Is that it? Yes.
+Is that it? Not quite.
 
+In your project directory you should see a ```env.php.dist``` clone that file as ```env.php``` and update the values to reflect your required Mailgun environment.
+
+```bash
+~$ cp env.php.dist env.php
+```
+
+```env.php```
+```php
+
+return [
+    'domain' => 'your.sites.domain.com',
+    'to' => 'First Last <user2@example2.org',
+    'api_key' => 'mailgun-api-key-7284edc3c0fbfbc15a53'
+];
+```
