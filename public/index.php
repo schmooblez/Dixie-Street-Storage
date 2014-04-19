@@ -13,15 +13,8 @@
 		</div>
 	</div>
 
-	<div class="container2">
-		<!--Pic next to features-->
-		<div id="contright">
-			<div class="units">
-				<img id="pic2" src="/images/units.jpg" alt="Dixie Street Storage Units">
-			</div>
-		</div>
-		<!--List of features-->
-		<div id="features">
+	<div class="row">
+		<div class="col-md-5">
 			<p class="description" id="ftitle">Facility Features&#58;</p>
 			<ul class="ftlist"><p>Buildings&#58;</p> <br />
 				<li class="list">Clean Units for Immediate Move-in</li>
@@ -38,6 +31,9 @@
 				<li class="list">Weekend Appointments</li>
 				<li class="list">RV, Boat, and Trailer Storage</li>
 			</ul>
+		</div>
+		<div class="col-md-7">
+			<img id="pic2" src="/images/units.jpg" alt="Dixie Street Storage Units">
 		</div>
 	</div>
 <?php require "./../includes/_footer.php"; ?>
