@@ -2,7 +2,7 @@
     <h1 class="text-center">
         <span class="company-name">Dixie Street Storage</span><br/><span class="company-type">Family Owned and Operated</span></h1>
 </div>
-<nav id="main-nav" class="container">
+<nav id="main-nav" class="navbar nav-default">
     <ul class="nav nav-justified">
         <li><a href="/">Home</a></li>
         <li><a href="/storagetips.php">Storage Tips</a></li>

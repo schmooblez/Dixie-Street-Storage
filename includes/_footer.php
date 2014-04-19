@@ -1,5 +1,5 @@
 <!--Footer at the bottom with navigation links and copyright-->
-<nav id ="footnav">
+<nav id="foot-nav">
     <div class="navbar-header">
         <p class="navbar-brand">&copy; Copyright 2014 Dixie Street Storage.</p>
     </div>
