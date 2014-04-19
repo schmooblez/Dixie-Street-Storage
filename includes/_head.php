@@ -1,3 +1,4 @@
+<?php $title = !empty($title) ? $title : 'Dixie Street Storage' ?>
 <!DOCTYPE html>
 <html>
     <head>
