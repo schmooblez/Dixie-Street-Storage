@@ -1,20 +1,14 @@
 <?php require "./../includes/_head.php"; ?>
-<body>
-<!--Top logo-->
 <?php require "./../includes/_navigation.php" ?>
-<!--The majority of the all content will go here-->
 	<h2 id="pagename">Home&#58;</h2>
-	<div class="container">
-		<p id="desc" class="description">Here at Dixie Street Storage, we take pride in our facility and believe that being family owned and operated ensures that we provide excellent customer service.</p>
-		<hr>
-		<!--Pic towards to top of the page-->
-		<div class="left">
-			<img id="sign" src="sign.jpg" alt="Dixie Street Storage Sign">
+	<p id="desc" class="description">Here at Dixie Street Storage, we take pride in our facility and believe that being family owned and operated ensures that we provide excellent customer service.</p>
+	<div class="row">
+		<div class="col-md-5">
+			<img id="sign" src="/images/sign.jpg" alt="Dixie Street Storage Sign">
 		</div>
-		<!--The Google Map-->
-		<div class="inner1">
+		<div class="col-md-7">
 			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6898.68109203555!2d-96.4224788809509!3d30.17026461818399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864402bbc1658455%3A0x40c8f277753e37c2!2s405+N+Dixie+St!5e0!3m2!1sen!2sus!4v1393213193484" width=98% height="285px" frameborder="1" alt="Dixie Street Storage Map"></iframe>
-			<p class="location">405 N Dixie St Brenham, TX 77833</p><hr>
+			<p class="location">405 N Dixie St Brenham, TX 77833</p>
 			<p class="location">Located less than half a mile from the intersection of 290 and 36.</p>
 		</div>
 	</div>
@@ -23,7 +17,7 @@
 		<!--Pic next to features-->
 		<div id="contright">
 			<div class="units">
-				<img id="pic2" src="units.jpg" alt="Dixie Street Storage Units">
+				<img id="pic2" src="/images/units.jpg" alt="Dixie Street Storage Units">
 			</div>
 		</div>
 		<!--List of features-->
