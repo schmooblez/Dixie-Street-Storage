@@ -32,12 +32,14 @@ img {
     color: #062247;
 }
 
-#main-nav li:first-of-type a {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
+@media (min-width: 768px) {
+    #main-nav li:first-of-type a {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
 
-#main-nav li:last-of-type a {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    #main-nav li:last-of-type a {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
 }
