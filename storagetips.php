@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="cssreset.css">
-<link rel="stylesheet" type="text/css" href="cssforall.css">
-<link rel="stylesheet" type="text/css" href="storagetips.css">
-<title>Dixie Street Storage - Storage Tips</title>
-</head>
+<?php require "_head.php"; ?>
 <body>
 <!--Top logo-->
-	<a href="index.html"><div class="header">
-		<h1 class= "logo" id="compname">Dixie Street Storage</h1>
-		<h1 class="logo" id="tagline">Family Owned and Operated</h1>
-	</div></a>
-<!--This menu will show at the top for phones only-->
-	<div class="navphone">
-			<ul>
-				<a href="index.html"><li id="home2">Home</li></a>
-				<a href="storagetips.html"><li id="storagetips2">Storage Tips</li></a>
-				<a href="sizeguide.html"><li id="sizeguide2">Size Guide</li></a>
-				<a href="faq.html"><li id="faq2">FAQ</li></a>
-				<a href="contactus.php"><li id="contact2">Contact</li></a>
-			</ul>
-	</div>
-<!--This menu will show at the top for non-mobile browsers only-->
-	<nav class="nav1">
-		<ul>
-			<li id="contact1"><a href="contactus.php">Contact</a></li>
-			<li id="faq1"><a href="faq.html">FAQ</a></li>
-			<li id="sizeguide1"><a href="sizeguide.html">Size Guide</a></li>
-			<li id="storagetips1"><a href="storagetips.html">Storage Tips</a></li>
-			<li id="home1"><a href="index.html">Home</a></li>
-		</ul>
-	</nav>
+<?php require "_navigation.php" ?>
 <!--The majority of the all content will go here-->
 	<h2 id="pagename">Packing and Storage Tips&#58;</h2>
 	<div class="container">
@@ -68,7 +38,7 @@
 			<li class="tips">Pictures and mirrors should be wrapped in cardboard and marked &ldquo;FRAGILE&rdquo; and stacked on end.</li>
 
 			<li class="tips">Furniture with drawers can be utilized as storage places for pictures, knick-knacks, china, silverware, small items, etc. Wrap them in tablecloths, towels or blankets to prevent breakage.</li>
-			
+
 			<li class="tips">Larger appliances make excellent &ldquo;packaging cases&rdquo; for blankets, towels, tablecloths and clothes.</li>
 
 			<li class="tips">Put TV's and other electronics in the rear of your unit.</li>
@@ -88,16 +58,6 @@
 			<li class="tips">Wipe any items made of metal; bikes, metal tables, tools, etc., with machine oil to prevent rusting.</li>
 		</ul>
 	</div>
-<!--Contains basic standard footer info-->
-	<div class="footer">
-		<nav id ="footnav">
-			<a href="index.html">Home</a>
-			<a href="storagetips.html">Storage Tips</a>
-			<a href="sizeguide.html">Size Guide</a>
-			<a href="faq.html">FAQ</a>
-			<a href="contactus.php">Contact</a>
-		</nav>
-		<p id="copy"> &copy; Copyright 2014 Dixie Street Storage. </p>
-	</div>
+<?php require "_footer.php"; ?>
 </body>
 </html>
