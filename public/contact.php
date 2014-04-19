@@ -47,41 +47,30 @@ function spamcheck($field) //Define the spamcheck function//
     echo '<p style="color:red;">'.$message.'</p>';
   }
   ?>
-     <form action="email2.php?do=send" method="POST">
-        <fieldset>
+    <div class="dss">
+    <img id="dssunits" src="/images/dixie_street_storage.jpg" alt="Dixie Street Storage Units">
+    </div>
+     <form action="email2.php?do=send" method="POST" role="form">
           <legend>Contact us&#58;</legend>
-          <div class="dss">
-          <img id="dssunits" src="dixie_street_storage.jpg" alt="Dixie Street Storage Units">
-          </div>
-          <p id="firstname">
-            <label for="firstname">First Name&#58;</label><br>
-            <input type="text" name="fname" class="formfield" id="firstname" value="<?php echo @$fname ?>" required>
-          </p>
-          <p>
-            <label for="lastname">Last Name&#58;</label><br>
-            <input type="text" name="lname" class="formfield" value="<?php echo @$lname ?>">
-          </p>
-          <p>
-            <label for="email">&#42;E&#150;mail&#58;</label><br>
-            <input type="email" name="femail" class="formfield" value="<?php echo @$femail ?>" required>
-          </p>
-          <p>
-            <label for="email">&#42;Retype E&#150;mail&#58;</label><br>
-            <input type="email" name="f2email" class="formfield" value="<?php echo @$femail ?>" required>
-          </p>
-          <p>
-            <label for="phone">&#42;Phone Number&#58;</label><br>
-            <input type="tel" name="fphone1" class="formfield" value="<?php echo @$fphone1 ?>">
-          </p>
-          <p id="message">
-            <label for="message">Message&#58;</label><br>
-            <textarea rows="5" cols="60" name="fsendmail" placeholder="Please enter a brief message here&hellip;" required></textarea>
-          </p>
-          <div id="submit">
-            <input type="submit" value="Submit">
-          </div>
+
+            <div class="form-group">
+              <label for="name">&#42;Name&#58;</label>
+              <input type="text" name="name" class="form-control" id="name" value="<?php echo @$fname ?>" required>
+            </div>
+            <div class="form-group">
+              <label for="email">&#42;E&#150;mail&#58;</label>
+              <input type="email" name="email" class="form-control" value="<?php echo @$femail ?>" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">&#42;Phone Number&#58;</label>
+              <input type="tel" name="phone" class="form-control" value="<?php echo @$fphone1 ?>" required>
+            </div>
+            <div class="form-group">
+              <label for="message">&#42;Message&#58;</label>
+              <textarea name="message" placeholder="Please enter a brief message here&hellip;" class="form-control" required></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-block btn-primary">
           <p id="disclaimer">&#42;Dixie Street Storage does not sell or share your information with outside vendors and only uses your personal information for the purpose of contacting you regarding our services.</p>
-        </fieldset>
       </form>
     </div>
   <?php
