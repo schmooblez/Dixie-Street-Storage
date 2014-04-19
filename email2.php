@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="contactus.css">
 <title>Dixie Street Storage - Contact Page</title>
 <?php
+/////////Note: this function is for code validation (from W3 schools)///////////////////////
 function spamcheck($field) //Define the spamcheck function//
   {
   $field=filter_var($field, FILTER_SANITIZE_EMAIL);   // Sanitize e-mail address//
@@ -17,9 +18,11 @@ function spamcheck($field) //Define the spamcheck function//
       return FALSE;
       }
     }
+/////////////////////////End W3 schools code //////////////////////
 ?>
 </head>
 <body>
+<!--*********************This bit is at the top and is on every page - IGNORE ************************ -->
   <!--Top logo-->
     <a href="index.html"><div class="header">
       <h1 class= "logo" id="compname">Dixie Street Storage</h1>
@@ -62,6 +65,7 @@ function spamcheck($field) //Define the spamcheck function//
           <td>979-836-5083</td>
         </tr>
       </table>
+<!--*********************Now we get to the good stuff below: ************************ -->
 <!--Contact Form-->
   <?php
   // display form if user has not clicked submit
@@ -70,7 +74,7 @@ function spamcheck($field) //Define the spamcheck function//
     ?>
   <!--Contact Form-->
   <?php
-   if (isset($message)){
+   if (isset($message)){//should show a message depending on if there are errors. I may need to put my validation code above this.
     echo '<p style="color:red;">'.$message.'</p>';
   }
   ?>
@@ -190,12 +194,13 @@ function spamcheck($field) //Define the spamcheck function//
             }
           }
            unset($_GET['do']);
-         header("Location: thank_you.html"); //Shoot them to the thank you site. - not sure I need this.  //
+//         header("Location: thank_you.html"); Shoot them to a thank you page... - Not built yet. Do I really need this?  //
          break;
      default: break;
      }
     }
   ?>
+
 <!--Contains basic standard footer info-->
   <div class="footer">
     <nav id ="footnav">
