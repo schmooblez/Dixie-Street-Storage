@@ -28,13 +28,15 @@ require "./../vendor/autoload.php";
 
 $config = require "./../env.php";
 
-$mg = new Mailgun($config['api_key']);
+$mg = new Mailgun\Mailgun($config['api_key']);
 
 $domain = $config['domain'];
 
+$_POST['messages'] = strip_tags($_POST['messages']);
+
 $mg->sendMessage($domain, array('from'    => $_POST['email'],
                                 'to'      => $config['to'],
-                                'subject' => "Contact Form from $config['domain']",
+                                'subject' => "Contact Form from $domain",
                                 'text'    => $_POST['message']));
 
 header('Location: /thanks.php');
