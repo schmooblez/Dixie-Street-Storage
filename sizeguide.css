@@ -1,0 +1,33 @@
+#pagename{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #ddd;
+	line-height: 1.5em;
+}
+.size{
+	text-align: center;
+	margin-bottom: .5em;
+}
+.container{
+	padding-bottom: 1em;
+}
+.guide{
+	border: 1px solid black;
+	line-height: 1.5em;	
+	padding: 1.2em 2em 1.2em 2em;
+}
+.about{
+	font-weight: bold;
+	width:5.5em;
+}
+.info{
+	margin-left: 2em;
+	display: inline-block;
+	height:5.5em;
+}
+#disclaimer{
+	margin-top: 1em;
+	font-size: 1em;
+	text-align:center;}
+.sizeinfot{width: 100%;}
+.about{padding-right:1.5em;}

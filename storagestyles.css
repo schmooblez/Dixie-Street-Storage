@@ -1,0 +1,366 @@
+/************************************************************
+1. Universal Styles
+2. Desktop Styles
+3. Tablet Styles
+4. Phone Styles
+5. Footer Content
+6. Widget Content
+7. Comments & Forms
+************************************************************/
+
+/*******************
+********************
+1. Universal Styles
+********************
+*******************/
+body{
+	margin:0 auto;
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #feffff 9%, #ebf2f4 55%, #d7e3e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(9%,#feffff), color-stop(55%,#ebf2f4), color-stop(100%,#d7e3e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #feffff 9%,#ebf2f4 55%,#d7e3e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #feffff 9%,#ebf2f4 55%,#d7e3e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #feffff 9%,#ebf2f4 55%,#d7e3e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #feffff 9%,#ebf2f4 55%,#d7e3e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d7e3e8',GradientType=0 ); /* IE6-9 */
+}
+a{
+	text-decoration: none;
+}
+.header, .nav1, .container, .container2, .footer{ /*centers and sets width of main part of site*/
+	margin: 0 auto;
+}
+.header, .container, .container2{background-color: #FFF;}
+.logo{ /*style logo and tagline at the top*/
+		font-family:"Times New Roman", Times, serif;
+		font-style:italic;
+		font-weight:bold;
+		text-align:center;
+		color: #062247;
+}
+/*---------TOP NAV---------------*/
+.nav1{ /*entire top nav with orange background and blue navigation bar floating right*/
+	height:28px;
+	overflow: none;
+	}
+.nav1 a{ /*set the styles for all links in the nav*/
+	color: #eee;
+	font-size: 18px;
+	font-family: "Myriad Pro", "Trebuchet MS", Arial, Sans-Serif;
+	display: block;
+}
+.nav1 ul{
+	padding: 0;
+	list-style-type: none;
+	}
+.nav1 li{ /*affects the li elements within in the nav*/
+	background-color: #062247;
+	border-bottom: 2px solid #fff; /*Can I short-hand these two lines on one?*/
+	height:26px; line-height: 26px;
+	position:relative;
+	text-align: center;
+	width:135px; /*You can make each blue navigation box wider if it looks scruntched (just watch the min-width above)*/
+}
+/*changes color of background of nav and link text on mouseover*/
+.nav1 li:hover {background-color: #99b6fa} /*can I put directly in nav1 li for cleaner code?*/
+.nav1 li:hover > a {color: #555;} /*can I put directly in nav1 li for cleaner code?*/
+
+/******************************Main Content*******************/
+#pagename{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #ddd;
+	line-height: 1.5em;
+}
+.container, .container2{
+	overflow:hidden;
+	position: relative;
+}
+.container2{padding-bottom:2.5em;}
+#sign{
+	width:100%;
+}
+.inner1{
+	position:relative;
+	float:right;
+	width:50%;
+	margin-bottom:2em;
+	}
+.map{/*The iframe with the google map*/
+		border:2px inset #ddeeff;
+		border-radius: 5px;
+		margin-bottom: 1em;
+	}
+.inner1 p{
+	text-align:center;
+	line-height: 1em;
+}
+.description{
+	text-align: center;
+	font-size: 1.3em;
+	color:#2283ff;
+	}
+#desc{padding:1.5em 3em 1em 3em;}
+#features{
+	width:40%;
+	float:left;
+	background-color: #fff;
+}
+.ftlist{
+	margin: 1em 0 0 2em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.list{
+	font-size:.8em;
+	margin-left:1.5em;
+	font-weight: normal;
+	list-style-type: circle;
+}
+.units{
+	width:80%;
+	height:480px;
+	min-width: 384px;
+	border:2px inset #ddeeff;
+	border-radius: 5px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+#contright{
+	position:relative;
+	float:right;
+	width:50%;
+}
+/*******************
+********************
+2. Desktop Styles
+********************
+*******************/
+@media only screen and (min-width:769px){
+	body{
+		width:80%;
+		min-width:800px;
+	}
+	#compname{
+		font-size: 40px;
+		line-height: 60px;
+	}
+	#tagline{
+		font-size: 26px;
+		line-height: 26px;
+		padding-bottom: 20px;
+	}
+/******************NAV TOP DESKTOP********************/
+	.navphone{display:none;}
+	.nav1{ /*entire top nav with orange background and blue navigation bar floating right*/
+		height:32px;
+		overflow: none;
+		background-color: #fff;
+		border-left:1px solid #fff;
+		border-bottom:2px solid #fff;
+		}
+	.nav1 a{ /*set the styles for all links in the nav*/
+		color: #eee;
+		font-size: 20px;
+		font-family: "Myriad Pro", "Trebuchet MS", Arial, Sans-Serif;
+	}
+	.nav1 ul{
+		padding: 0;
+		list-style-type: none;
+	}
+	.nav1 > ul{width: 100%;}
+	.nav1 li{ /*affects the li elements within in the nhav*/
+		border-radius: 5px 5px 0px 0px;
+		background-color: #062247;
+		border-bottom: 2px solid #fff; /*Can I short-hand these two lines on one?*/
+		float:right;
+		height:32px; line-height: 32px;
+		position:relative;
+		text-align: center;
+		width:20%; /*You can make each blue navigation box wider if it looks scruntched (just watch the min-width above)*/
+	}
+	
+	#contact1{
+		border-right:0.18% solid #fff;
+		border-radius: 5px 15px 0px 0px;
+		} /*sets white border-right to right most navigation item*/
+	#home1{
+		border-radius: 15px 5px 0px 0px;
+		border-left: none;}
+
+	/*changes color of background of nav and link text on mouseover*/
+	.nav1 li:hover {background-color: #99b6fa} /*can I put directly in nav1 li for cleaner code?*/
+	.nav1 li:hover > a {color: #555;} /*can I put directly in nav1 li for cleaner code?*/
+
+/******************BODY CONTENT DESKTOP********************/
+	.left{
+		position:relative;
+		width:40%;
+		min-width: 384px;
+		border:2px inset #ddeeff;
+		border-radius: 5px;
+		margin-left: 5px;
+		height:285px;
+		float:left;
+		overflow:hidden;
+	}
+
+}
+/*******************
+********************
+3. Tablet Styles
+********************
+*******************/
+
+@media only screen and (min-width:481px) and (max-width: 768px){/*ipad in landscape*/
+	body{
+		width:100%;
+		min-width:640px;
+	}
+	#compname{
+		font-size: 32px;
+		line-height: 50px;
+	}
+	#tagline{
+		font-size: 20px;
+		line-height: 22px;
+		padding-bottom: 10px;
+	}
+	/**********************TABLET NAV TOP***************************/
+	.navphone{display:none;}
+	.nav1{ /*entire top nav with orange background and blue navigation bar floating right*/
+		height:32px;
+		overflow: none;
+		background-color: #fff;
+		border-left:1px solid #fff;
+		border-bottom:2px solid #fff;
+		}
+	.nav1 a{ /*set the styles for all links in the nav*/
+		color: #eee;
+		font-size: 20px;
+		font-family: "Myriad Pro", "Trebuchet MS", Arial, Sans-Serif;
+	}
+	.nav1 ul{
+	 padding: 0;
+	 list-style-type: none;
+	}
+	.nav1 > ul{width: 100%;}
+	.nav1 li{ /*affects the li elements within in the nhav*/
+		border-radius: 5px 5px 0px 0px;		
+		background-color: #062247;
+		border-bottom: 2px solid #fff; /*Can I short-hand these two lines on one?*/
+		float:right;
+		height:32px; line-height: 32px;
+		position:relative;
+		text-align: center;
+		width:20%; /*You can make each blue navigation box wider if it looks scruntched (just watch the min-width above)*/
+	}
+	
+	#contact1{
+		border-right:0.18% solid #fff;
+		border-radius: 5px 15px 0px 0px;
+		} /*sets white border-right to right most navigation item*/
+	#home1{
+		border-radius: 15px 5px 0px 0px;
+		border-left: none;
+	}
+	/*changes color of background of nav and link text on mouseover*/
+	.nav1 li:hover {background-color: #99b6fa} /*can I put directly in nav1 li for cleaner code?*/
+	.nav1 li:hover > a {color: #555;} /*can I put directly in nav1 li for cleaner code?*/
+
+/**********************TABLET CONTENT***************************/
+	.left{
+		position:relative;
+		width:40%;
+		min-width: 305px;
+		border:2px inset #ddeeff;
+		border-radius: 5px;
+		margin-left: 5px;
+		height:228px;
+		float:left;
+		overflow:hidden;
+	}
+}
+/********************
+4. Mobile Device Styles
+********************
+*******************/
+@media only screen and (max-width: 480px){ /*iphone in landscape*/
+	body{
+		width:100%;
+		margin:0 auto;
+		background-color: #fff;
+	}
+	.header{/*contains logo pic*/
+		width:216px;
+		margin:0 auto;
+		background-color: #fff;
+	}
+	#pagename{text-align: center}
+	/**********************NAV TOP***************************/
+	.nav1{display:none;}
+	.navphone{ /*entire top nav with orange background and blue navigation bar floating right*/
+		height:140px;
+		}
+	.navphone a{ /*set the styles for all links in the nav*/
+		color: #eee;
+		font-size: 18px;
+		font-family: "Myriad Pro", "Trebuchet MS", Arial, Sans-Serif;
+	}
+	.navphone ul{
+	 padding: 0;
+	 list-style-type: none;
+	}
+	.navphone li{ /*affects the li elements within in the nav*/
+		background-color: #062247;
+		border-style: solid;
+		border-width: 0px 2px 2px; 
+		border-color: #fff;
+		height:26px; line-height: 26px;
+		position:relative;
+		text-align: center;
+		width:100%; /*You can make each blue navigation box wider if it looks scruntched (just watch the min-width above)*/
+	}
+	/*changes color of background of nav and link text on mouseover*/
+	.navphone li:hover {background-color: #99b6fa} /*can I put directly in navphone li for cleaner code?*/
+	.navphone li:hover > a {color: #555;} /*can I put directly in navphone li for cleaner code?*/
+
+/**********************MOBILE CONTENT***************************/
+	.left{
+		position:relative;
+		width:40%;
+		min-width: 305px;
+		border:2px inset #ddeeff;
+		border-radius: 5px;
+		margin: 1em auto;
+		height:228px;
+		overflow:hidden;
+	}
+	.map, .header{margin:1em auto;}
+}
+
+/*******************
+********************
+5. Footer Content
+********************
+*******************/
+
+/* Can add this formatting to the footer (but hold off for now - import footer from C:\wamp\www\Boss Nugget\index.html)
+-but coloring is pretty fucked up*/
+
+#footnav a, #footnav a:visited{  /*space out the footer links*/
+	margin: 0px 5px;
+	color: rgb(0, 53, 53);
+	text-decoration: underline;
+}
+
+.footer { /*styles the whole footer sections*/
+clear:both;
+padding: 5px 0;
+text-align: center;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;
+background-color: #99b6fa;
+color: rgb(0, 53, 53);
+font:12px/20px "times new roman", times, serif;
+}

@@ -1,0 +1,47 @@
+#pagename{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #ddd;
+	line-height: 1.5em;
+}
+.tips{
+	margin-bottom:1em;
+	margin-left:1em;
+	padding-right:1em;
+	list-style-type: disc;
+}
+.container{
+	line-height: 1.5em;
+	padding: 2em 1em 1em 1em;
+}
+#sunits{height:402px;}
+.storageunits{
+	width:50%;
+	max-width: 550px;
+	min-width: 384px;
+	border:2px inset #ddeeff;
+	border-radius: 5px;
+	margin-left: 2em;
+	overflow:hidden;
+}
+/*Tablet and desktop (for styling the page's image)*/
+@media only screen and (min-width:481px){ /*everything bigger than a phone*/
+	.storageunits{
+		float:right;
+		height:365px;
+	}
+}
+/*Phone style (for styling the page's image)*/
+@media only screen and (max-width: 480px){ /*iphone in landscape*/
+	.container{
+		min-width: 200px;
+		margin: 0 auto;
+		padding: 0 1em 1em 1em;
+	}
+	.storageunits{
+		margin: 1em auto;
+		height:245px;
+		width:95%;
+		min-width: 150px;
+	}
+	#sunits{height:300px;}

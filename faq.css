@@ -1,0 +1,21 @@
+#pagename{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #ddd;
+	line-height: 1.5em;
+}
+.q{
+	background-color: #eee;
+	margin-top:1em;
+	padding-left:1em;
+	padding-right:1em;
+}
+.a{
+	padding-left: 2em;
+	margin-right: 3em;
+	}
+.container{padding-bottom: 2em;}
+.faq{
+	line-height: 1.5em;
+	padding: 0em 1em 0em 1em;
+}

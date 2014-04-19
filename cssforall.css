@@ -1,0 +1,200 @@
+/************************************************************
+1. Universal Styles
+2. Desktop Styles
+3. Tablet Styles
+4. Phone Styles
+5. Footer Content
+************************************************************/
+
+/*******************
+********************
+1. Universal Styles
+********************
+*******************/
+body{/*Slight color-gradient to the site body background*/
+	margin:0 auto; /*centers page*/
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #feffff 9%, #ebf2f4 55%, #d7e3e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(9%,#feffff), color-stop(55%,#ebf2f4), color-stop(100%,#d7e3e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #feffff 9%,#ebf2f4 55%,#d7e3e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #feffff 9%,#ebf2f4 55%,#d7e3e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #feffff 9%,#ebf2f4 55%,#d7e3e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #feffff 9%,#ebf2f4 55%,#d7e3e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d7e3e8',GradientType=0 ); /* IE6-9 */
+}
+.header, .nav1, .container, .container2, .footer{margin: 0 auto;}  /*centers and sets width of main part of site*/
+.header, .container, .container2{background-color: #FFF;} /*White background to header/logo and content sections*/
+.logo{/*styles the text in the top logo and tagline*/
+		font-family:"Times New Roman", Times, serif;
+		font-style:italic;
+		font-weight:bold;
+		text-align:center;
+		color: #062247;
+}
+/*-----------TOP NAV---------------*/
+.nav1{ /*entire top navigation*/
+	height:2em;
+	overflow: none;
+	border-left:1px solid #fff;
+	border-bottom:2px solid #fff;
+}
+.nav1 a{ /*set the styles for all links in the nav*/
+	display: block;
+	color: #eee;
+	font-size: 1.25em;
+	font-family: "Myriad Pro", "Trebuchet MS", Arial, Sans-Serif;
+}
+.nav1 ul{
+	padding: 0;
+	list-style-type: none;
+	background-color: #fff;
+}
+.nav1 > ul{width: 100%;}
+.nav1 li{ /*affects the li elements within in the nav*/
+	border-radius: 5px 5px 0px 0px;
+	background-color: #062247;
+	border-bottom: 2px solid #fff;
+	float:right;
+	height:2em; line-height: 2em;
+	position:relative;
+	text-align: center;
+	width:20%;
+}
+#contact1{/*sets white border-right to right most navigation item*/
+	border-right:0.18% solid #fff;
+	border-radius: 5px 15px 0px 0px;
+}
+#home1{/*sets white border-right to right most navigation item*/
+	border-radius: 15px 5px 0px 0px;
+	border-left: none;}
+/*changes color of background of nav and link text on mouseover*/
+.nav1 li:hover {background-color: #99b6fa}
+.nav1 li:hover > a {color: #555;}
+/******************************Main Content*******************/
+#pagename{
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #ddd;
+	line-height: 1.5em;
+}
+.container, .container2{
+	overflow:hidden;
+	position:relative;
+}
+/*******************
+********************
+2. Desktop/Laptop Styles
+********************
+*******************/
+@media only screen and (min-width:769px){
+	body{
+		width:80%;
+		min-width:800px;
+	}
+	#compname{
+		font-size: 2.5em;
+		line-height: 1.5em;
+	}
+	#tagline{
+		font-size: 1.6em;
+		padding-bottom: .78125em;
+	}
+	.navphone{display:none;} /*Hides the phone nav when viewing on desktops/laptops*/
+}
+/*******************
+********************
+3. Tablet Styles
+********************
+*******************/
+@media only screen and (min-width:481px) and (max-width: 768px){/*Ipad in landscape*/
+	body{
+		width:100%;
+		min-width:640px;
+	}
+	#compname{
+		font-size: 2em;
+		line-height: 1.6em;
+	}
+	#tagline{
+		font-size: 1.25em;
+		line-height: 1.1em;
+		padding-bottom: .5em;
+	}
+	.navphone{display:none;} /*Hides the phone nav when viewing on tablets*/
+}
+/*******************
+********************
+4. Mobile Device Styles
+********************
+*******************/
+@media only screen and (max-width: 480px){ /*iphone in landscape*/
+	body{
+		width:100%;
+		margin:0 auto;
+		background-color: #fff;
+	}
+	.header{/*contains logo*/
+		width:216px;
+		margin:0 auto;
+		background-color: #fff;
+		margin:1em auto;
+	}
+	#compname{
+		font-size: 1.5em;
+		line-height: 1em;
+		margin-bottom:.25em;
+	}
+	#tagline{
+		font-size: 1em;
+	}
+	/**********************NAV TOP***************************/
+	.nav1{display:none;}
+	.navphone{height:140px;}
+	.navphone a{ /*set the styles for all links in the nav*/
+		color: #eee;
+		font-size: 1.125em;
+		font-family: "Myriad Pro", "Trebuchet MS", Arial, Sans-Serif;
+	}
+	.navphone ul{
+	 padding: 0;
+	 list-style-type: none;
+	}
+	.navphone li{ /*affects the li elements within in the nav*/
+		background-color: #062247;
+		border-style: solid;
+		border-width: 0px 2px 2px; 
+		border-color: #fff;
+		height:1.44444444em; line-height: 1.44444444em;
+		position:relative;
+		text-align: center;
+		width:100%;
+	}
+	/*changes color of background of nav and link text on mouseover*/
+	.navphone li:hover {background-color: #99b6fa}
+	.navphone li:hover > a {color: #555;}
+	#pagename{
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+}
+/*******************
+********************
+5. Footer Content
+********************
+*******************/
+#footnav a, #footnav a:visited{  /*space out the footer links*/
+	margin: 0px 5px;
+	color: rgb(0, 53, 53);
+	text-decoration: underline;
+}
+.footer { /*styles the whole footer sections*/
+	clear:both;
+	padding: 5px 0;
+	text-align: center;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	background-color: #99b6fa;
+	color: rgb(0, 53, 53);
+	font:.75em/1.66667em "times new roman", times, serif;
+}
+#copy{font-size: 1em}

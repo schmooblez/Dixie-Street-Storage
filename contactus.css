@@ -1,0 +1,37 @@
+fieldset{padding:1em 1.5em;}
+label{font-weight: bold;}
+.formfield{margin: 1em 0;}
+.dss{
+	width:50%;
+	max-width: 550px;
+	height:300px;
+	min-width: 384px;
+	border:2px inset #ddeeff;
+	border-radius: 10px;
+	float:right;
+	margin-left: 2em;
+	overflow:hidden;
+}
+.cinfo{margin: 2em auto;}
+td{padding-left: 2em;}
+.bold{font-weight: bold;}
+#dssunits{width:550px;}
+#locdesc{
+	margin-top: 1em;
+	text-align: center;}
+#loc{
+	width: 30em;
+	margin: 0 auto;
+}
+#firstname{margin-top: 1em;}
+#message{clear:right;}
+#submit{
+	text-align: center;
+	margin-bottom: 1em;
+}
+#disclaimer{font-size: .8em;}
+textarea{
+	margin: 1em 0;
+	width:100%;
+}
+input{width:27.5%;}
