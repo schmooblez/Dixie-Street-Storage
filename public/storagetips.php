@@ -1,7 +1,7 @@
-<?php require "_head.php"; ?>
+<?php require "./../includes/_head.php"; ?>
 <body>
 <!--Top logo-->
-<?php require "_navigation.php" ?>
+<?php require "./../includes/_navigation.php" ?>
 <!--The majority of the all content will go here-->
 	<h2 id="pagename">Packing and Storage Tips&#58;</h2>
 	<div class="container">
@@ -58,6 +58,6 @@
 			<li class="tips">Wipe any items made of metal; bikes, metal tables, tools, etc., with machine oil to prevent rusting.</li>
 		</ul>
 	</div>
-<?php require "_footer.php"; ?>
+<?php require "./../includes/_footer.php"; ?>
 </body>
 </html>

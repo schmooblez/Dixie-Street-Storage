@@ -1,7 +1,7 @@
-<?php require "_head.php"; ?>
+<?php require "./../includes/_head.php"; ?>
 <body>
 <!--Top logo-->
-<?php require "_navigation.php" ?>
+<?php require "./../includes/_navigation.php" ?>
 <!--The majority of the all content will go here-->
 	<h2 id="pagename">Size Guide&#58;</h2>
 	<div class="container">
@@ -110,6 +110,6 @@
 		<p id="disclaimer">* Actual contents will vary based on the size of your belongings.</p>
 	</div>
 <!--Contains basic standard footer info-->
-<?php require "_footer.php"; ?>
+<?php require "./../includes/_footer.php"; ?>
 </body>
 </html>

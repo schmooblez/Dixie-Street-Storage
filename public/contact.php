@@ -14,10 +14,10 @@ function spamcheck($field) //Define the spamcheck function//
     }
 /////////////////////////End W3 schools code //////////////////////
 ?>
-<?php require "_head.php"; ?>
+<?php require "./../includes/_head.php"; ?>
 <body>
 <!--Top logo-->
-<?php require "_navigation.php" ?>
+<?php require "./../includes/_navigation.php" ?>
    <h2 id="pagename">Contact Us&#58;</h2>
     <div class="container">
       <p id="locdesc">We are located less than half a mile from the intersection of 290 and 36.</p><hr>
@@ -170,16 +170,6 @@ function spamcheck($field) //Define the spamcheck function//
     }
   ?>
 
-<!--Contains basic standard footer info-->
-  <div class="footer">
-    <nav id ="footnav">
-      <a href="index.html">Home</a>
-      <a href="storagetips.html">Storage Tips</a>
-      <a href="sizeguide.html">Size Guide</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contactus.php">Contact</a>
-    </nav>
-    <p id="copy"> &copy; Copyright 2014 Dixie Street Storage. </p>
-  </div>
+<?php require "./../includes/_footer.php"; ?>
 </body>
 </html>

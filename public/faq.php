@@ -1,7 +1,7 @@
-<?php require "_head.php"; ?>
+<?php require "./../includes/_head.php"; ?>
 <body>
 <!--Top logo-->
-<?php require "_navigation.php" ?>
+<?php require "./../includes/_navigation.php" ?>
 <!--The majority of the all content will go here-->
 	<h2 id="pagename">Frequently Asked Questions&#58;</h2>
 	<div class="container">
