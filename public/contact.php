@@ -1,5 +1,8 @@
 <?php
 
+$errors = !empty($errors) ? $errors : [];
+$messages = !empty($messages) ? $messages : [];
+
 $class = function ($name) use ($errors)
 {
     $class = 'form-group';
