@@ -1,3 +1,13 @@
 img {
-	max-width: 100%;
+    max-width: 100%;
+}
+
+.company-name {
+    color: blue;
+    font-size: 46px;
+}
+
+.company-type {
+    color:blue;
+    font-size: 36px;
 }
