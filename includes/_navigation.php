@@ -9,13 +9,13 @@
 			<a href="storagetips.html"><li id="storagetips2">Storage Tips</li></a>
 			<a href="sizeguide.html"><li id="sizeguide2">Size Guide</li></a>
 			<a href="faq.html"><li id="faq2">FAQ</li></a>
-			<a href="email2.php"><li id="contact2">Contact</li></a>
+			<a href="contact.php"><li id="contact2">Contact</li></a>
 		</ul>
 </div>
 <!--This menu will show at the top for non-mobile browsers only-->
 <nav class="nav1">
 	<ul>
-		<li id="contact1"><a href="email2.php">Contact</a></li>
+		<li id="contact1"><a href="contact.php">Contact</a></li>
 		<li id="faq1"><a href="faq.html">FAQ</a></li>
 		<li id="sizeguide1"><a href="sizeguide.html">Size Guide</a></li>
 		<li id="storagetips1"><a href="storagetips.html">Storage Tips</a></li>
