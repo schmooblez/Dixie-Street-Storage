@@ -2,6 +2,10 @@ img {
     max-width: 100%;
 }
 
+.page-header {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .company-name {
     color: #062247;
     font-size: 46px;
@@ -10,9 +14,11 @@ img {
 .company-type {
     color: #062247;
     font-size: 36px;
+    font-style: italic;
 }
 
 #main-nav a {
+    font-size: 20px;
     background-color: #062247;
     color: white;
 }
@@ -20,4 +26,18 @@ img {
 #main-nav a:hover {
     background-color: #99b6fa;
     color: #555555;
+}
+
+#foot-nav a {
+    color: #062247;
+}
+
+#main-nav li:first-of-type a {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#main-nav li:last-of-type a {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
