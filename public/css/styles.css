@@ -11,3 +11,13 @@ img {
     color: #062247;
     font-size: 36px;
 }
+
+#main-nav a {
+    background-color: #062247;
+    color: white;
+}
+
+#main-nav a:hover {
+    background-color: #99b6fa;
+    color: #555555;
+}
