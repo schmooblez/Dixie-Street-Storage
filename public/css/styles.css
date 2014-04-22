@@ -28,6 +28,27 @@ img {
     color: #555555;
 }
 
+.bold{
+    font-weight:bold;
+}
+
+#pagename{
+    color: #062247;
+    padding-left: 30px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 44%, #f7f7f7 54%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(44%,#f3f3f3), color-stop(54%,#f7f7f7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 44%,#f7f7f7 54%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f3f3f3 44%,#f7f7f7 54%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f3f3f3 44%,#f7f7f7 54%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 44%,#f7f7f7 54%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.center{
+    text-align: center;
+}
+
 #foot-nav a {
     color: #062247;
 }
@@ -43,3 +64,105 @@ img {
         border-bottom-right-radius: 15px;
     }
 }
+/**********************Styles for Home Page****************************/
+#signdiv, #mapdiv{
+    margin-top:12px;
+}
+
+.description{
+    text-align: center;
+    color:#2283ff;
+    font-size: 16px;
+    margin-bottom:12px;
+}
+
+#features{
+    text-align: center;
+    font-size:32px;
+    margin-bottom: .5em;
+}
+
+#featuresdiv{
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+#pic2{
+    margin:0 auto;
+}
+
+#build, #access, #services{
+    margin-bottom:0;
+}
+
+/**********************Styles for FAQ****************************/
+.q{
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(left,  #eeeeee 0%, #eeeeee 48%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(48%,#eeeeee), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #eeeeee 0%,#eeeeee 48%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #eeeeee 0%,#eeeeee 48%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #eeeeee 0%,#eeeeee 48%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to right,  #eeeeee 0%,#eeeeee 48%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    padding-left:.3em;
+    padding-right:.3em;
+}
+
+.a{
+    padding-left: 2em;
+    margin-right: 3em;
+}
+
+/**********************Styles for Storage Tips****************************/
+#sunitsdiv{
+    float:right;
+    margin-bottom:1em;
+}
+
+.tips{
+    margin-bottom:1em;
+    padding-right:1em;
+    list-style-type: disc;
+}
+
+#rowid{margin-top:.5em;};
+
+/**********************Styles for Contact Page****************************/
+#addressm, #addressp, #phone{margin-bottom:5em;}
+
+.images{
+    border:2px inset #ddeeff;
+    border-radius: 5px;
+}
+
+/**********************Styles for Size Guide Page****************************/
+.size{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.about{
+    font-weight: bold;
+    width:8em;
+}
+
+.info{
+    margin-left: 2em;
+    display: inline-block;
+    height:5.5em;
+}
+
+#disclaimer{
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align:center;}
+
+.sizeinfot{width: 100%;}
+
+.about{padding-right:1.5em;}
+
+table{margin-bottom: 2em;}
+
+td{padding-bottom:1em;}

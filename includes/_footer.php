@@ -5,11 +5,11 @@
     </div>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav pull-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="storagetips.html">Storage Tips</a></li>
-            <li><a href="sizeguide.html">Size Guide</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contactus.php">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/storagetips.php">Storage Tips</a></li>
+            <li><a href="/sizeguide.php">Size Guide</a></li>
+            <li><a href="/faq.php">FAQ</a></li>
+            <li><a href="/contact.php">Contact</a></li>
         </ul>
     </div>
 </nav>

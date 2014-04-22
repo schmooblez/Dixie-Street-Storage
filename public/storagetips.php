@@ -5,8 +5,8 @@
 <!--The majority of the all content will go here-->
 	<h2 id="pagename">Packing and Storage Tips&#58;</h2>
 	<div class="container">
-		<div class="storageunits">
-			<img id="sunits" src="storageunits.jpg" alt="Dixie Street Storage Units">
+		<div class="col-md-7" id="sunitsdiv">
+			<img class="images" src="/images/storageunits.jpg" alt="Dixie Street Storage Units">
 		</div>
 		<ul>
 			<li class="tips">You can save yourself some extra cash by renting an appropriately sized unit. Check out our <a href="sizeguide.html">size guide</a>.</li>

@@ -28,16 +28,6 @@
 			<p class="a">You can access your unit between the hours of 6am and 10pm.</p>
 		</div>
 	</div>
-<!--Contains basic standard footer info-->
-	<div class="footer">
-		<nav id ="footnav">
-			<a href="index.html">Home</a>
-			<a href="storagetips.html">Storage Tips</a>
-			<a href="sizeguide.html">Size Guide</a>
-			<a href="faq.html">FAQ</a>
-			<a href="contactus.php">Contact</a>
-		</nav>
-		<p id="copy"> &copy; Copyright 2014 Dixie Street Storage. </p>
-	</div>
+<?php require "./../includes/_footer.php"; ?>
 </body>
 </html>

@@ -12,7 +12,6 @@ $class = function ($name) use ($errors)
 
     echo $class;
 };
-
  ?>
 <?php require "./../includes/_head.php"; ?>
 <body>
@@ -20,22 +19,21 @@ $class = function ($name) use ($errors)
 <?php require "./../includes/_navigation.php" ?>
    <h2 id="pagename">Contact Us&#58;</h2>
     <div class="container">
-      <p id="locdesc">We are located less than half a mile from the intersection of 290 and 36.</p><hr>
   <!--All contact info-->
-      <table class="cinfo">
-        <tr>
-          <td class ="bold">Mailing Address&#58;</td>
-          <td class ="bold">Physical Address&#58;</td>
-          <td class ="bold">Phone&#58;</td>
-        </tr>
-        <tr>
-          <td>P.O. Box 1215<br> Brenham TX 77834</td>
-          <td>405 N. Dixie Street <br> Brenham TX 77833</td>
-          <td>979-836-5083</td>
-        </tr>
-      </table>
-    <div class="dss">
-    <img id="dssunits" src="/images/dixie_street_storage.jpg" alt="Dixie Street Storage Units">
+        <div class="col-xs-4 col-md-4">
+          <p class ="bold center">Mailing Address&#58;</p>
+          <p class="center" style="padding-bottom:1.5em">P.O. Box 1215<br> Brenham TX 77834</p>
+        </div>
+        <div class="col-xs-4 col-md-4">
+          <p class ="bold center">Physical Address&#58;</p>
+          <p class="center" style="padding-bottom:1.5em">405 N. Dixie Street <br> Brenham TX 77833</p>
+        </div>
+        <div class="col-xs-4 col-md-4">
+          <p class ="bold center">Phone&#58;</p>                 
+          <p class="center" style="padding-bottom:1.5em">979-836-5083</p>
+        </div>
+    <div class="col-md-5">
+     <img class="images" src="/images/dixie_street_storage.jpg" alt="Dixie Street Storage Units">
     </div>
     <?php if (!empty($messages)): ?>
       <div class="alert alert-danger">
@@ -46,6 +44,7 @@ $class = function ($name) use ($errors)
         </ul>
       </div>
     <?php endif ?>
+    <div class="col-md-7">
      <form action="/contact_action.php" method="POST" role="form">
           <legend>Contact us&#58;</legend>
             <div class="<?php $class('name'); ?>">
@@ -65,8 +64,8 @@ $class = function ($name) use ($errors)
               <textarea name="message" placeholder="Please enter a brief message here&hellip;" class="form-control" required></textarea>
             </div>
             <input type="submit" value="Submit" class="btn btn-block btn-primary">
-          <p id="disclaimer">&#42;Dixie Street Storage does not sell or share your information with outside vendors and only uses your personal information for the purpose of contacting you regarding our services.</p>
       </form>
+    </div>
     </div>
 <?php require "./../includes/_footer.php"; ?>
 </body>
